@@ -3,7 +3,10 @@ import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
+
 const Header = () => {
+  console.log('Firebase API Key:', import.meta.env.VITE_FIREBASE_API_KEY);
+
   const dispatch = useDispatch();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // state for mobile menu
 
